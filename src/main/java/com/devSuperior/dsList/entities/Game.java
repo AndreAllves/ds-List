@@ -14,7 +14,7 @@ public class Game {
     private String title;
 
     @Column(name = "game_year")
-    private int yeear;
+    private int year;
     private String genre;
     private String platforms;
     private double score;
@@ -32,7 +32,7 @@ public class Game {
     public Game(long id, String title, int yeear, String genre, String platforms, double score, String imgUrl, String shortDescription, String longDescription) {
         this.id = id;
         this.title = title;
-        this.yeear = yeear;
+        this.year = yeear;
         this.genre = genre;
         this.platforms = platforms;
         this.score = score;
@@ -65,12 +65,12 @@ public class Game {
         this.title = title;
     }
 
-    public int getYeear() {
-        return yeear;
+    public int getYear() {
+        return year;
     }
 
-    public void setYeear(int yeear) {
-        this.yeear = yeear;
+    public void setYear(int yeear) {
+        this.year = yeear;
     }
 
     public String getPlataform() {
