@@ -1,7 +1,7 @@
 package com.devSuperior.dsList.dto;
 
 
-import com.devSuperior.dsList.entities.Games;
+import com.devSuperior.dsList.entities.Game;
 import org.springframework.beans.BeanUtils;
 
 public class GameDto {
@@ -18,7 +18,7 @@ public class GameDto {
 
     public GameDto() {}
 
-    public GameDto(Games game) {
+    public GameDto(Game game) {
         BeanUtils.copyProperties(game, this);
     }
 

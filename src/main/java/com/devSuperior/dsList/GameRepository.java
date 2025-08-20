@@ -1,8 +1,8 @@
 package com.devSuperior.dsList;
 
-import com.devSuperior.dsList.entities.Games;
+import com.devSuperior.dsList.entities.Game;
 import org.springframework.data.jpa.repository.JpaRepository;
 
-public interface GameRepository extends JpaRepository<Games, Long> {
+public interface GameRepository extends JpaRepository<Game, Long> {
 
 }

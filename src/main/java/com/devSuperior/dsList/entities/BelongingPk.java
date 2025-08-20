@@ -1,7 +1,6 @@
 package com.devSuperior.dsList.entities;
 
 import jakarta.persistence.Embeddable;
-import jakarta.persistence.FetchType;
 import jakarta.persistence.JoinColumn;
 import jakarta.persistence.ManyToOne;
 
@@ -12,23 +11,23 @@ public class BelongingPk {
 
     @ManyToOne
     @JoinColumn(name = "game_id")
-    private Games games;
+    private Game games;
 
     @ManyToOne
     @JoinColumn(name = "list_id")
     private GameList gameList;
 
-    public BelongingPk(Games games, GameList gameList) {
+    public BelongingPk(Game games, GameList gameList) {
         this.games = games;
         this.gameList = gameList;
     }
     public BelongingPk() {}
 
-    public Games getGames() {
+    public Game getGames() {
         return games;
     }
 
-    public void setGames(Games games) {
+    public void setGames(Game games) {
         this.games = games;
     }
 
